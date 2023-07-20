@@ -96,7 +96,7 @@ The guide walks through the process of building an exercise for a specific modul
 
 The main purpose of this project is to learn how to create educational exercises that align with the HYF Belgium curriculum. It allows students to practice the concepts covered in a particular module and reinforces their understanding of the material.
 
-[Read](./note.md) How to create it from scratch
+[Read](./note.md) How to create it from scratch.
 
 This simple project showcased how JSDoc annotations can be used to document functions and how to create a basic test suite to verify the correctness of the solutions. With ChatGPT's help, we explored four alternative solutions to the initial problem and successfully tested them using the test suite.
 
@@ -152,7 +152,7 @@ List of features:
 
 - 4 different implementations of the same original script
 - different tests made with Jest
-- an utility to create Markdown documentation in the `docs.md` file.
+- an utility to create Markdown documentation in the `docs.md` file
 - a script to create HTML documentation inside the `./out` folder
 
 ## Status
@@ -161,7 +161,7 @@ Project is: _done_
 
 ## Inspiration
 
-Project by HYF Belgium
+HYF Belgium
 
 ## Contact
 
