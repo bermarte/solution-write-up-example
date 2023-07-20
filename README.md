@@ -19,6 +19,7 @@ Solution-write-up-example
 ## General info
 
 The purpose of this simple project is to demonstrate how JSDoc works for basic use cases and how to create a simple test suite for functions. The project begins with a solution written for an Edabit challenge. Then, we'll create four different alternative solutions using ChatGPT.
+Open the relative [Markdown file](./example_count_true_values.md)
 
 We have a function written for an Edabit challenge, and we want to explore alternative solutions to solve the same problem. Throughout the process, we'll use JSDoc to document the functions and create a basic test suite to ensure their correctness.
 The initial solution is as follows:
@@ -35,18 +36,21 @@ function count_true(lst) {
 }
 ```
 
-the alternative solutions together with the tests are called remixes:
+The alternative solutions together with the tests are called remixes:
 
-- remix1.test.js
-- remix2.test.js
-- remix3.test.js
-- remix4.test.js
+- [remix1.test.js](./remix1.test.js)
+- [remix2.test.js](./remix2.test.js)
+- [remix3.test.js](./remix3.test.js)
+- [remix4.test.js](./remix4.test.js)
 
 Some other very basic examples are provided.
 
+- [example.js](./example.js) // basic JSDoc annotation
+- [mul.test.js](./mul.test.js) // basic test
+
 This project was built following [this guide](https://github.com/HackYourFutureBelgium/solution-write-ups)
 
-[Read](./example_count_true_values.md) How to create it from scratch
+[Read](./note.md) How to create it from scratch
 
 This simple project showcased how JSDoc annotations can be used to document functions and how to create a basic test suite to verify the correctness of the solutions. With ChatGPT's help, we explored four alternative solutions to the initial problem and successfully tested them using the test suite.
 
