@@ -43,12 +43,58 @@ The alternative solutions together with the tests are called remixes:
 - [remix3.test.js](./remix3.test.js)
 - [remix4.test.js](./remix4.test.js)
 
-Some other very basic examples are provided.
+### remix 1
+
+```JavaScript
+const count_true2 = (lst) => {
+  let count = 0;
+  lst.map((item) =>
+    typeof item === "boolean" && item === true ? count++ : null
+  );
+  return count;
+};
+```
+
+### remix 2
+
+```JavaScript
+const count_true3 = (lst) => {
+  let count = 0;
+  for (const item of lst) {
+    if (item === true) {
+      count++;
+    }
+  }
+  return count;
+};
+```
+
+### remix 3
+
+```JavaScript
+const count_true4 = (lst) => {
+  return lst.filter((item) => item === true).length;
+};
+```
+
+### remix 4
+
+```JavaScript
+const count_true5 = (lst) => {
+  return lst.reduce((count, value) => count + (value === true ? 1 : 0), 0);
+};
+```
+
+Some other very basic examples are provided to show how to use JSdoc and Jest tests.
 
 - [example.js](./example.js) // basic JSDoc annotation
 - [mul.test.js](./mul.test.js) // basic test
 
-This project was built following [this guide](https://github.com/HackYourFutureBelgium/solution-write-ups)
+This project is based on a comprehensive guide provided by HackYourFuture (HYF) Belgium. Check [this guide](https://github.com/HackYourFutureBelgium/solution-write-ups).
+
+The guide walks through the process of building an exercise for a specific module in their curriculum. Check [this module](https://github.com/DeNepo/behavior-strategy-implementation).
+
+The main purpose of this project is to learn how to create educational exercises that align with the HYF Belgium curriculum. It allows students to practice the concepts covered in a particular module and reinforces their understanding of the material.
 
 [Read](./note.md) How to create it from scratch
 
@@ -78,7 +124,7 @@ This simple project showcased how JSDoc annotations can be used to document func
 /**
  * create a function which returns the number of true values there are in an array
  *
- * @param {[boolean]} lst An array of booleans
+ * @param {Array.<boolean>} lst An array of booleans
  * @returns {number} How many true values are in the array
  */
 function count_true(lst) {
